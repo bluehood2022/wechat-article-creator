@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>"Copilot要杀死低代码？"我们试了三个月，发现被骗了</title>
+</head>
+<body style="margin:0;padding:0;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Arial,sans-serif;color:#222222;background:#ffffff;-webkit-font-smoothing:antialiased;">
+
+<section style="background:#ffffff;padding:0;margin:0;max-width:100%;box-sizing:border-box;font-family:-apple-system,'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Arial,sans-serif;">
+
+<!-- ===== OPC自习室 标签 ===== -->
+<section style="padding:12px 16px 0;">
+  <section style="display:inline-flex;align-items:center;background:#ffb400;border-radius:4px;padding:4px 12px;font-size:12px;font-weight:bold;color:#fff;letter-spacing:1px;">
+    <span style="margin-right:6px;font-size:10px;">▶</span>
+    <span>OPC自习室</span>
+  </section>
+</section>
+
+<!-- ===== 封面图 ===== -->
+<section style="padding:16px;">
+  <section style="border:2px solid #ffb400;border-radius:8px;overflow:hidden;">
+    <img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/801f303214eb4f229c12f7b06e10a9bc~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779717600&x-signature=surX0vTcSqJY2W5nEN3T03EeQnY%3D&format=.png" style="width:100%;display:block;" />
+  </section>
+</section>
+
+<!-- ===== 标题 ===== -->
+<section style="padding:0 20px 8px;">
+  <h1 style="font-size:22px;color:#222222;font-weight:900;margin:0 0 8px;line-height:1.4;">
+    <span style="color:#ffb400;font-weight:900;">■</span>"Copilot要杀死低代码？"
+  </h1>
+  <p style="font-size:14px;color:#999999;margin:0 0 4px;font-size:13px;">
+    我们试了三个月，发现被骗了 _
+  </p>
+  <section style="height:3px;background:linear-gradient(90deg,#ffb400,transparent);margin:16px 0 8px;"></section>
+</section>
+
+<!-- ===== 引语 ===== -->
+<section style="padding:0 20px 20px;">
+  <section style="background:#f5f5f5;border-left:3px solid #ffb400;padding:14px 16px;border-radius:0 6px 6px 0;margin-bottom:20px;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;">
+      有人说2026年低代码已死，我们偏不信邪。一场真实的"人机大战"后，CTO老张红着眼圈说：<span style="color:#ffb400;font-weight:bold;">差点把家底都赔进去。</span>
+    </p>
+  </section>
+</section>
+
+<!-- ===== 第一章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">01</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">那个让CTO失眠的深夜</span>
+  </section>
+  <p style="color:#999999;font-size:12px;margin:-8px 0 16px;">
+    // 灵魂拷问：AI都能自动写代码了，低代码平台是不是该扔了？
+  </p>
+</section>
+
+<section style="padding:0 20px 16px;">
+  <section style="border:2px solid #ffb400;border-radius:8px;overflow:hidden;">
+    <img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/51e98b83b9d84850863aef89af7095b8~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779717600&x-signature=FhE3AsdOtYAHX4Zlvd0UbXodLtw%3D&format=.png" style="width:100%;display:block;" />
+  </section>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">凌晨两点，老张盯着屏幕上的代码，手里的咖啡早就凉了。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">他是某制造企业的技术负责人，最近被一个"灵魂拷问"折磨得睡不着觉——</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;"><span style="color:#ffb400;font-weight:bold;">"AI都能自动写代码了，我们花百万买的低代码平台，是不是该扔了？"</span></p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">这句话来自CEO。上周的周会上，老板把一篇爆款文章摔在桌上，标题赫然写着：<span style="color:#ffb400;font-weight:bold;">《Copilot来了，低代码进入倒计时》</span>。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">老张没吭声。他知道，公司里至少有三个技术骨干已经在偷偷用Cursor写代码了，效率确实高。更可怕的是，上周一个实习生用ChatGPT加v0，两个小时搭出来一个数据看板，前端组的老王干了三天。</p>
+
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:14px;margin:20px 0;">
+    <p style="font-size:15px;color:#666666;line-height:1.8;margin:0;font-style:italic;">
+      那晚，老张做了一个决定：用一个月，让AI代码生成和低代码平台正面打一仗。
+    </p>
+  </section>
+</section>
+
+<!-- ===== 第二章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">02</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">第一回合：AI的"高光时刻"</span>
+  </section>
+  <p style="color:#999999;font-size:12px;margin:-8px 0 16px;">
+    // 前三天，AI队碾压式领先
+  </p>
+</section>
+
+<section style="padding:0 20px 16px;">
+  <section style="border:2px solid #ffb400;border-radius:8px;overflow:hidden;">
+    <img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/d5103627b1754e06948a16f26573eef1~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779717600&x-signature=bzWdAVosIH0a%2BxRF5BgAgDnhcto%3D&format=.png" style="width:100%;display:block;" />
+  </section>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">老张挑了一个中等难度的任务——给生产车间做一个设备报修表单系统。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">他分了两队：</p>
+
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 8px;"><span style="color:#ffb400;font-weight:bold;">A队：</span>用Copilot + Cursor，纯AI生成代码，前端React，后端Node.js，数据库PostgreSQL。带队的是一年经验的小李，AI用得溜。</p>
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;"><span style="color:#ffb400;font-weight:bold;">B队：</span>用公司现有的低代码平台（含流程引擎和表单设计器），带队的是干了八年开发的王哥，低代码熟手。</p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">前三天，AI队碾压式领先。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">小李对着Cursor说了一句话："帮我做一个设备报修表单，包含设备编号、故障描述、紧急程度三选一，提交后存数据库。"<span style="color:#ffb400;font-weight:bold;">十秒钟，表单代码出来了。</span></p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">三天后，AI队已经跑通了基本流程。小李兴奋地在群里发截图："看，全程没写一行代码！"</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">低代码队呢？王哥还在拖拽组件、配置数据源。不是慢，是因为要对接公司现有的ERP系统，读设备台账、写工单状态回传，低代码那边需要先配接口。</p>
+
+  <section style="background:#f5f5f5;border-left:3px solid #ffb400;padding:14px 16px;border-radius:0 6px 6px 0;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;font-weight:bold;">第一回合，AI队完胜。老张心里咯噔一下：难道预算真该砍？</p>
+  </section>
+</section>
+
+<!-- ===== 第三章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">03</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">AI写出来的代码，像"没有工地的建筑"</span>
+  </section>
+  <p style="color:#999999;font-size:12px;margin:-8px 0 16px;">
+    // 转折：AI猜来猜去，Bug越修越多
+  </p>
+</section>
+
+<section style="padding:0 20px 16px;">
+  <section style="border:2px solid #ffb400;border-radius:8px;overflow:hidden;">
+    <img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/5e96b6882d2846d69794218e0ecb3a0c~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779717600&x-signature=tMGNU5sFW9HwmzBoeE%2Fw%2F8fUvHk%3D&format=.png" style="width:100%;display:block;" />
+  </section>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">第七天，问题来了。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">测试组报了一个Bug：紧急工单提交后，维修组收到的通知有时延迟十分钟。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">小李开始调试。他让AI帮忙定位问题，AI给了三个可能的解释，但都是泛泛而谈——连接池、异步队列、网络抖动。</p>
+
+  <section style="background:#FFF3F3;border-left:3px solid #E74C3C;padding:14px 16px;border-radius:0 6px 6px 0;margin:20px 0;">
+    <p style="font-size:15px;color:#C0392B;line-height:1.8;margin:0 0 8px;font-weight:bold;">[!] 问题爆发</p>
+    <p style="font-size:15px;color:#666666;line-height:1.8;margin:0;">"到底是什么？"小李一遍遍问，AI一遍遍换着花样猜。他花了整整一天，最后发现自己没加事务控制——当数据库写入和消息通知同时失败时，工单状态变成"待处理"，但维修组没收到。系统出现了<span style="color:#E74C3C;font-weight:bold;">"幽灵工单"</span>。</p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">更麻烦的是，这个Bug要改，涉及六个文件、三种语言。AI每次只改一小块，改完又冒出新的问题。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">老张后来跟朋友形容：</p>
+
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:14px;margin:20px 0;">
+    <p style="font-size:15px;color:#666666;line-height:1.8;margin:0;font-style:italic;">
+      "就像你找了个施工队，他们半天给你搭好了毛坯房，但你一住进去，发现厕所漏水、电路跳闸、窗户关不严。你让施工队来修，他们来了，这儿敲一下，那儿补一下，结果厨房又开始漏水了。"
+    </p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">那边，王哥的低代码队呢？第十天的时候，他开始用平台的"流程引擎"画工单流转图，拖了几个节点，配了条件分支。触发延迟？不存在的，因为平台的异步消息机制是封装好的，从来没出过问题。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">第十五天，AI队还在修Bug。小李已经换了三个不同的AI提示词，试了"重写整个模块"，结果把之前好的功能也搞坏了。</p>
+
+  <section style="background:#f5f5f5;border-left:3px solid #ffb400;padding:14px 16px;border-radius:0 6px 6px 0;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;font-weight:bold;">老张第一次意识到：AI生成的代码，像一串漂亮但脆弱的积木；而低代码平台，是那个告诉你"这块积木必须放这里才能站稳"的图纸。</p>
+  </section>
+</section>
+
+<!-- ===== 第四章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">04</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">权限和合规，AI根本不懂</span>
+  </section>
+  <p style="color:#999999;font-size:12px;margin:-8px 0 16px;">
+    // 第三周，安全审计来了，AI队彻底崩溃
+  </p>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">第三周，更严重的事发生了。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">公司安全审计突然要求：所有工单系统必须实现"角色分级审批"——部门主管只能看本部门工单，财务只能看涉及备件采购的工单，而且所有操作日志必须保留六个月。</p>
+
+  <section style="background:#FFF3F3;border-left:3px solid #E74C3C;padding:14px 16px;border-radius:0 6px 6px 0;margin:20px 0;">
+    <p style="font-size:15px;color:#C0392B;line-height:1.8;margin:0 0 8px;font-weight:bold;">[!] AI队崩溃</p>
+    <p style="font-size:15px;color:#666666;line-height:1.8;margin:0;">小李让AI生成RBAC代码。AI确实生成了，但用的是网上最常见的一套开源方案。问题是，这套方案跟公司现有的AD域认证不兼容。改？AI不知道AD域是什么。小李只能自己翻文档、写适配层，一写就是三天。</p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">更崩溃的是，安全审计要求"多租户数据隔离"，AI生成的SQL语句里完全没考虑租户ID过滤。小李手动加了几十个 WHERE tenant_id = ?，但还是漏了两个查询接口，<span style="color:#E74C3C;font-weight:bold;">差点酿成数据泄露</span>。</p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">老张后怕：<span style="color:#ffb400;font-weight:bold;">"如果真上线了，我这CTO就不用干了。"</span></p>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">反观低代码平台，王哥点开"角色权限管理"模块，勾选了几个选项，配置了数据行级过滤规则，<span style="color:#ffb400;font-weight:bold;">五分钟搞定</span>。日志审计？平台自带，一键开启。</p>
+
+  <section style="background:#f5f5f5;border-left:3px solid #ffb400;padding:14px 16px;border-radius:0 6px 6px 0;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;font-weight:bold;">AI像一匹野马，跑得快，但不认路。低代码是那个缰绳和地图。</p>
+  </section>
+</section>
+
+<!-- ===== 第五章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">05</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">最后的真相</span>
+  </section>
+  <p style="color:#999999;font-size:12px;margin:-8px 0 16px;">
+    // 不是谁取代谁，是AI负责"浪漫"，低代码负责"落地"
+  </p>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">一个月后的复盘会上，老张放了张PPT，上面只有一行大字：</p>
+
+  <section style="background:#ffb400;border-radius:8px;padding:20px;margin:24px 0;text-align:center;">
+    <p style="font-size:17px;font-weight:900;color:#fff;margin:0;line-height:1.6;letter-spacing:1px;">
+      "AI大模型 × 低代码平台 = 未来的开发范式"
+    </p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">他解释了为什么不是"+"而是"×"：</p>
+
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 8px;"><span style="color:#ffb400;font-weight:bold;">AI负责生成：</span>快速出原型、写基础CRUD代码、生成测试用例、翻译自然语言需求。它不眠不休，效率是人力的十倍。</p>
+    <p style="font-size:15px;color:#222222;line-height:1.8;margin:0;"><span style="color:#ffb400;font-weight:bold;">低代码负责约束：</span>提供权限、流程、集成、安全、日志等企业级"骨架"。AI生成的代码像血肉，但没有骨架，就是一摊肉泥。</p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">最后，老张给出了公司的新方案：</p>
+
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:2;margin:0;">
+      <span style="color:#ffb400;font-weight:bold;">1.</span> 业务人员用自然语言对AI描述需求<br/>
+      <span style="color:#ffb400;font-weight:bold;">2.</span> AI生成低代码平台可导入的"应用描述文件"<br/>
+      <span style="color:#ffb400;font-weight:bold;">3.</span> 开发人员在低代码平台中微调、配置权限、对接内部系统<br/>
+      <span style="color:#ffb400;font-weight:bold;">4.</span> 上线
+    </p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">这套流程让一个中等复杂度应用的开发周期从<span style="color:#ffb400;font-weight:bold;">三周缩短到五天</span>。</p>
+</section>
+
+<!-- ===== 第六章 ===== -->
+<section style="padding:24px 20px 0;">
+  <section style="display:flex;align-items:center;margin-bottom:16px;">
+    <span style="background:#ffb400;color:#fff;font-size:13px;font-weight:900;padding:4px 10px;border-radius:4px;">▶</span>
+    <span style="color:#222222;font-size:17px;font-weight:900;margin-left:10px;">给所有正在纠结的人一句大实话</span>
+  </section>
+</section>
+
+<section style="padding:0 20px 20px;">
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">故事讲完了。如果你现在正在犹豫"要不要扔掉低代码，全押AI"，老张的亲身经历可以给你三个结论：</p>
+
+  <!-- 三个结论 -->
+  <section style="background:#f5f5f5;border:1px solid #e0e0e0;border-radius:8px;padding:16px;margin:20px 0;">
+    <p style="font-size:15px;color:#222222;line-height:2;margin:0 0 12px;"><span style="color:#ffb400;font-weight:bold;">[1]</span> 低代码不是被AI取代，而是被AI"逼着进化"</p>
+    <p style="font-size:15px;color:#222222;line-height:2;margin:0 0 12px;"><span style="color:#ffb400;font-weight:bold;">[2]</span> AI写不出"让你睡得着觉的代码"</p>
+    <p style="font-size:15px;color:#222222;line-height:2;margin:0;"><span style="color:#ffb400;font-weight:bold;">[3]</span> 真正的红利是"AI增强型低代码"</p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">别站队，要混搭。<span style="color:#ffb400;font-weight:bold;">让AI当创意画师，让低代码当施工监理。你当那个拍板的人。</span></p>
+
+  <!-- 自检问题 -->
+  <section style="background:#ffb400;border-radius:8px;padding:20px;margin:24px 0;text-align:center;">
+    <p style="font-size:17px;font-weight:900;color:#fff;margin:0;line-height:1.6;letter-spacing:1px;">
+      你愿意让AI在没有约束的情况下，<br/>直接提交支付、权限、数据一致性的代码到生产环境吗？
+    </p>
+  </section>
+
+  <p style="font-size:15px;color:#222222;line-height:1.8;margin:0 0 14px;">如果你的答案是"不愿意"，那你就知道低代码为什么还活着了。</p>
+
+  <!-- 结尾金句 -->
+  <section style="background:#f5f5f5;border:2px solid #ffb400;border-radius:12px;padding:24px;margin:28px 0;text-align:center;">
+    <p style="font-size:16px;color:#222222;font-weight:bold;margin:0;line-height:2;">
+      AI让坠落更好看，<br/>
+      低代码让你<span style="color:#ffb400;">睡得着觉</span>。<br/><br/>
+      别选边站，<span style="color:#ffb400;font-weight:bold;">混搭才是未来</span>。
+    </p>
+  </section>
+
+  <!-- 底部 -->
+  <section style="border-top:2px solid #e0e0e0;padding-top:16px;margin-top:24px;text-align:center;">
+    <p style="font-size:15px;color:#222222;margin:0 0 8px;font-weight:bold;">
+      评论区聊聊：你遇到过AI写代码"翻车"的经历吗？
+    </p>
+    <section style="display:inline-flex;align-items:center;margin-top:8px;background:#ffb400;border-radius:4px;padding:4px 12px;">
+      <span style="color:#fff;font-size:11px;font-weight:bold;letter-spacing:1px;">▶ OPC自习室</span>
+    </section>
+  </section>
+
+</section>
+
+</section>
+</body>
+</html>

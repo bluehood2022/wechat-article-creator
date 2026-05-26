@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一人公司真能管100个Agent吗？</title>
+<style>
+body { margin: 0; padding: 16px; font-family: -apple-system, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif; }
+</style>
+</head>
+<body>
+<section style="margin:0;padding:0;max-width:100%;box-sizing:border-box;">
+
+<section style="width:100%;margin-bottom:16px;">
+<img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/d919de6792684b4f89a73845578422b8~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779681600&x-signature=Zo7LCAvu8MtcKQskn5YZiciAZJg%3D&format=.png" style="width:100%;display:block;border-radius:4px;" />
+</section>
+
+<section style="margin:20px 0;padding:0 8px;">
+<section style="background:#f7f8fa;border-left:4px solid #07C160;padding:16px;border-radius:0 8px 8px 0;margin-bottom:24px;">
+<p style="font-size:15px;color:#555;line-height:1.8;margin:0;">最近，AI开发圈出现了一张很有冲击力的账单。</p>
+</section>
+</section>
+
+<section style="padding:0 8px;">
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">据 Tom's Hardware 5月17日报道，OpenClaw 创建者 Peter Steinberger 曾晒出一张 OpenAI 使用量截图：<strong>30天内花费约130.5万美元</strong>，覆盖6030亿Token、760万次请求，背后大约是<strong>100个 Codex 实例</strong>，由一个三人团队调度。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">这不是一个普通开发者的日常账单。Steinberger 已在今年2月加入 OpenAI，相关成本由 OpenAI 覆盖。换句话说，这更像一次<strong>"不考虑预算约束"的极限实验</strong>。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">但对 OPC 来说，它很有参考价值。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">因为它提前把一个问题摆到了台面上：<strong>当一人公司真的可以调动一批AI代理干活，最先被放大的，未必是利润，而是成本、流程和管理复杂度。</strong></p>
+</section>
+
+<!-- ===== 第一章 ===== -->
+<section style="margin:32px 0 16px;padding:0 8px;">
+<section style="display:flex;align-items:center;margin-bottom:8px;">
+<section style="background:#07C160;color:#fff;font-size:14px;font-weight:bold;padding:4px 12px;border-radius:4px 0 0 4px;">01</section>
+<section style="background:#07C160;color:#fff;font-size:16px;font-weight:bold;padding:4px 16px;border-radius:0 4px 4px 0;flex:1;">AI员工不是免费的，只是工资单换了名字</section>
+</section>
+</section>
+
+<section style="width:100%;margin-bottom:16px;">
+<img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/ab9265ff3c26497fa0c52a92f2ceb6a9~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779681600&x-signature=6479QTy6xQng%2BHNezxsGuUMoxuw%3D&format=.png" style="width:100%;display:block;border-radius:4px;" />
+</section>
+
+<section style="padding:0 8px;">
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">过去讲OPC，大家容易把重点放在<strong>"一个人能干十个人的活"</strong>。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">这个判断没有错，但它少算了一层：<strong>AI代理不领工资，却消耗Token、上下文、推理时间、沙盒环境、云资源和人的监督精力。</strong></p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">OpenClaw这个案例里，Agent做的不是简单问答，而是更接近软件团队里的持续开发工作：自动审查PR、扫描安全漏洞、整理GitHub Issue、写修复代码、监控性能回归，甚至根据讨论内容生成新的代码任务。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">这听起来像是把一个工程团队拆成了100个并行小工位。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">问题在于，每个工位都会反复读取上下文、调用模型、生成代码、等待验证、再进入下一轮。如果任务边界不清晰，Agent之间互相覆盖、重复检查、反复读同一批文件，<strong>Token消耗会迅速膨胀。</strong></p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">所以OPC真正要学的不是"多开几个Agent"，而是<strong>如何给Agent设计工作制度</strong>。</p>
+
+<section style="background:#fff8f0;border-radius:8px;padding:16px;margin:20px 0;">
+<p style="font-size:15px;color:#E67E22;font-weight:bold;margin:0 0 12px;">🤔 灵魂五问：</p>
+<p style="font-size:15px;color:#555;line-height:2;margin:0;">▸ 任务要拆多细？<br/>▸ 哪些文件能碰，哪些不能碰？<br/>▸ 什么时候必须停下来等人审？<br/>▸ 什么任务用强模型，什么任务用便宜模型？<br/>▸ 上下文如何压缩，历史如何归档？</p>
+</section>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">这些问题，过去属于公司里的工程管理。现在，它开始变成一人公司的基本功。</p>
+</section>
+
+<!-- ===== 第二章 ===== -->
+<section style="margin:32px 0 16px;padding:0 8px;">
+<section style="display:flex;align-items:center;margin-bottom:8px;">
+<section style="background:#07C160;color:#fff;font-size:14px;font-weight:bold;padding:4px 12px;border-radius:4px 0 0 4px;">02</section>
+<section style="background:#07C160;color:#fff;font-size:16px;font-weight:bold;padding:4px 16px;border-radius:0 4px 4px 0;flex:1;">工具越强，OPC越像一个调度系统</section>
+</section>
+</section>
+
+<section style="width:100%;margin-bottom:16px;">
+<img src="https://p26-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/3f3cafff59c049dda9f52253fd0ce759~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779681600&x-signature=LKsGbeeVMHZfVhclNEHm3QRXLwg%3D&format=.png" style="width:100%;display:block;border-radius:4px;" />
+</section>
+
+<section style="padding:0 8px;">
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">OpenAI 在今年2月发布 Codex 桌面应用时，把它定位成<strong>"管理多个Agent的命令中心"</strong>。官方介绍里强调的不是单个Agent更聪明，而是开发者可以同时管理多个任务、让Agent在隔离工作区里并行推进，并在Diff层面做审查和协作。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">GitHub也在更早的时候推出过 Copilot coding agent：开发者可以把Issue分配给Agent，Agent在GitHub Actions环境里工作，提交到草稿PR，再由人类审核。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">这些产品变化说明，<strong>AI编程工具的竞争重点正在移动！</strong></p>
+
+<section style="background:#f0f9f4;border-radius:8px;padding:16px;margin:24px 0;">
+<p style="font-size:15px;color:#07C160;font-weight:bold;margin:0 0 12px;">📈 AI编程工具演进三阶段</p>
+<section style="display:flex;align-items:center;margin-bottom:10px;">
+<section style="width:28px;height:28px;background:#07C160;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:bold;margin-right:12px;flex-shrink:0;">1</section>
+<p style="font-size:15px;color:#333;margin:0;">第一阶段：补全代码</p>
+</section>
+<section style="display:flex;align-items:center;margin-bottom:10px;">
+<section style="width:28px;height:28px;background:#07C160;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:bold;margin-right:12px;flex-shrink:0;">2</section>
+<p style="font-size:15px;color:#333;margin:0;">第二阶段：帮你写一个函数、修一个Bug</p>
+</section>
+<section style="display:flex;align-items:center;">
+<section style="width:28px;height:28px;background:#07C160;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:bold;margin-right:12px;flex-shrink:0;">3</section>
+<p style="font-size:15px;color:#333;margin:0;">第三阶段：你开始像管理团队一样管理Agent</p>
+</section>
+</section>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">OPC的机会也在这里。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">未来一个强OPC，不一定是最会写Prompt的人，而是<strong>最会搭建生产线的人。</strong></p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:8px;">一个人用AI写写脚本，成本可能很低。</p>
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:8px;">一个小团队让几十个Agent持续跑任务，成本可能完全是另一张账。</p>
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">如果再叠加高频迭代、长上下文、代码库扫描、自动测试和多模型路由，账单就会变成产品成本的一部分。</p>
+
+<section style="background:#333;color:#fff;border-radius:8px;padding:20px;margin:24px 0;text-align:center;">
+<p style="font-size:18px;font-weight:bold;margin:0;line-height:1.6;">AI降低了进入门槛<br/>但没有取消经营门槛</p>
+</section>
+</section>
+
+<!-- ===== 第三章 ===== -->
+<section style="margin:32px 0 16px;padding:0 8px;">
+<section style="display:flex;align-items:center;margin-bottom:8px;">
+<section style="background:#07C160;color:#fff;font-size:14px;font-weight:bold;padding:4px 12px;border-radius:4px 0 0 4px;">03</section>
+<section style="background:#07C160;color:#fff;font-size:16px;font-weight:bold;padding:4px 16px;border-radius:0 4px 4px 0;flex:1;">一人公司不是一个人硬扛，而是一个人会设计组织</section>
+</section>
+</section>
+
+<section style="width:100%;margin-bottom:16px;">
+<img src="https://p11-dreamina-sign.byteimg.com/tos-cn-i-tb4s082cfz/f999b97511fe43c684e5e37f2481ac68~tplv-tb4s082cfz-aigc_resize:0:0.png?lk3s=7c3bb0db&x-expires=1779681600&x-signature=U1CvLL5%2BDTT2faiPEZ1Xzd8ckjc%3D&format=.png" style="width:100%;display:block;border-radius:4px;" />
+</section>
+
+<section style="padding:0 8px;">
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">OpenClaw的案例容易让人兴奋：三个人，100个Agent，像在提前演示一个<strong>微型自动化公司</strong>。</p>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">尤其对内容、软件、工具、自动化服务这些OPC方向来说，未来竞争很可能不只比谁会用最新模型，而是<strong>比三件事：</strong></p>
+
+<section style="margin:20px 0;">
+<section style="display:flex;margin-bottom:12px;align-items:flex-start;">
+<section style="width:32px;height:32px;background:linear-gradient(135deg,#07C160,#06AD56);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;margin-right:12px;flex-shrink:0;">1</section>
+<p style="font-size:15px;color:#333;line-height:1.6;margin:0;padding-top:4px;">能不能把工作流拆成Agent能<strong>稳定完成</strong>的任务。</p>
+</section>
+<section style="display:flex;margin-bottom:12px;align-items:flex-start;">
+<section style="width:32px;height:32px;background:linear-gradient(135deg,#07C160,#06AD56);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;margin-right:12px;flex-shrink:0;">2</section>
+<p style="font-size:15px;color:#333;line-height:1.6;margin:0;padding-top:4px;">能不能用<strong>更低成本</strong>完成同样质量的输出。</p>
+</section>
+<section style="display:flex;margin-bottom:12px;align-items:flex-start;">
+<section style="width:32px;height:32px;background:linear-gradient(135deg,#07C160,#06AD56);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:bold;margin-right:12px;flex-shrink:0;">3</section>
+<p style="font-size:15px;color:#333;line-height:1.6;margin:0;padding-top:4px;">能不能建立<strong>审查和纠错机制</strong>，避免自动化把错误放大。</p>
+</section>
+</section>
+
+<p style="font-size:16px;color:#333;line-height:1.8;margin-bottom:16px;">换句话说，OPC不是<strong>"小公司去掉员工"</strong>，而是<strong>"小公司把组织能力压缩进一个人身上"</strong>。</p>
+
+<section style="background:linear-gradient(135deg,#07C160,#06AD56);border-radius:12px;padding:24px;margin:28px 0;text-align:center;">
+<p style="font-size:17px;color:#fff;font-weight:bold;margin:0;line-height:1.8;">AI代理让一个人能做更多事。<br/><br/>但只有会算账、会调度、会验收的人，<br/>才能把"更多事"变成真正的生意。</p>
+</section>
+
+<section style="border-top:1px solid #eee;padding-top:20px;margin-top:28px;text-align:center;">
+<p style="font-size:14px;color:#999;margin:0;">— 本文数据来源：Tom's Hardware, 2026年5月 —</p>
+</section>
+</section>
+
+</section>
